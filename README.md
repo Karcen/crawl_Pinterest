@@ -7,7 +7,7 @@
 
 如果出现卡在22%报错，修改get_image_url_keyword为headless模式，   
 `cr_options.add_argument("--headless")  # 启用无头模式`
-`# cr_options.add_argument("--start-maximized")  # 将浏览器最大化`
+`# cr_options.add_argument("--start-maximized")  # 取消将浏览器最大化`
 
 chromedriver_file的格式类似于`chromedriver_path=r'C:\Program Files (x86)\chromedriver-win64\chromedriver.exe'`，在https://developer.chrome.google.cn/docs/chromedriver/downloads?hl=zh-cn根据自己的chrome版本下载。
 
