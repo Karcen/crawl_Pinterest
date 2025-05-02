@@ -19,7 +19,21 @@ keyword: # the input keyword
 image_links:[] # store it as a list
 ```
 
-
+如果报错
+```
+Traceback (most recent call last):
+  File "C:\Users\Jiacheng Zheng\Documents\Jupyter code\crawling\step_crawling.py", line 74, in <module>
+    data = json.load(f)
+           ^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x94 in position 1434421: illegal multibyte sequence
+```
+可以加上 encoding='utf-8'，例如
+```
+ with open(input_file, 'r', encoding='utf-8') as f:
+```
 ## 配置信息
 *查看selenium* 的配置方法
 Chrome Driver 最新版本下载
